@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="626.0" maxWidth="1100.0" minHeight="618.0" minWidth="1100.0" prefHeight="618.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.AddAdminController">
+   <children>
+      <ImageView fitHeight="618.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="438.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Admin Form" wrappingWidth="221.6708984375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin's E-mail" wrappingWidth="221.6708984375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin's Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin's Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="drname" layoutX="700.0" layoutY="125.0" promptText="Name" />
+      <TextField fx:id="drnuumber" layoutX="700.0" layoutY="238.0" promptText="Number" />
+      <TextField fx:id="dremail" layoutX="700.0" layoutY="333.0" promptText="example@yahoo.com" />
+      <PasswordField fx:id="drpassword" layoutX="704.0" layoutY="435.0" text="dkckdscds" />
+      <Button fx:id="add_btn" layoutX="797.0" layoutY="552.0" mnemonicParsing="false" onAction="#add_click" prefHeight="27.0" prefWidth="90.0" text="Add" />
+      <Button fx:id="back_btn" layoutX="986.0" layoutY="552.0" mnemonicParsing="false" onAction="#back_click" prefHeight="31.0" prefWidth="90.0" text="back" />
+   </children>
+</AnchorPane>

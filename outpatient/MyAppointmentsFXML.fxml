@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.MyAppointmentsFXMLController">
+   <children>
+      <ImageView fx:id="rate" fitHeight="650.0" fitWidth="1100.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#f1f3f4" height="460.0" layoutX="517.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="530.0" />
+      <Label fx:id="view_app" alignment="TOP_LEFT" layoutX="522.0" layoutY="72.0" prefHeight="450.0" prefWidth="518.0" />
+      <Button fx:id="view_btn" layoutX="320.0" layoutY="170.0" mnemonicParsing="false" onAction="#view_click" prefHeight="31.0" prefWidth="156.0" text="View" />
+      <Button fx:id="cancel_btn" layoutX="326.0" layoutY="447.0" mnemonicParsing="false" onAction="#cancel_click" prefHeight="31.0" prefWidth="156.0" text="cancel appointment " />
+      <Label layoutX="76.0" layoutY="164.0" prefHeight="31.0" prefWidth="156.0" text="View My Appointments" />
+      <Label layoutX="76.0" layoutY="250.0" prefHeight="45.0" prefWidth="167.0" text="Choose doctor to rate" />
+      <ComboBox fx:id="choosedr_combox" layoutX="320.0" layoutY="257.0" prefHeight="31.0" prefWidth="156.0" promptText="choose doctor " />
+      <ComboBox fx:id="canceledid_combobox" layoutX="76.0" layoutY="447.0" prefHeight="31.0" prefWidth="196.0" promptText="choose Appointment" />
+      <Slider fx:id="rating" blockIncrement="0.1" layoutX="76.0" layoutY="341.0" majorTickUnit="5.0" max="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" />
+      <Button fx:id="rate_btn" layoutX="326.0" layoutY="348.0" mnemonicParsing="false" onAction="#rate_drag" prefHeight="31.0" prefWidth="156.0" text="Rate" />
+      <Button fx:id="previouspage_btn" layoutX="76.0" layoutY="561.0" mnemonicParsing="false" onAction="#back_click" prefHeight="31.0" prefWidth="94.0" text="back" />
+      <Button fx:id="logout_btn" layoutX="961.0" layoutY="561.0" mnemonicParsing="false" onAction="#logout_click" text="Log out " />
+      <Label layoutX="76.0" layoutY="98.0" prefHeight="31.0" prefWidth="156.0" text="My Notification " />
+      <Button fx:id="notView" layoutX="320.0" layoutY="98.0" mnemonicParsing="false" onAction="#notView_click" prefHeight="31.0" prefWidth="156.0" text="View" />
+   </children>
+</AnchorPane>

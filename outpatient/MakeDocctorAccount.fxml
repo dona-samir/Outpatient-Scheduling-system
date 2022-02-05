@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="626.0" maxWidth="1100.0" minHeight="618.0" minWidth="1100.0" prefHeight="618.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.MakeDocctorAccountController">
+   <children>
+      <ImageView fitHeight="618.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="438.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Doctor Form" wrappingWidth="221.6708984375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor's E-mail" wrappingWidth="221.6708984375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor's Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor's Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor's Shift">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="drname" layoutX="700.0" layoutY="125.0" promptText="Name" />
+      <TextField fx:id="drnuumber" layoutX="700.0" layoutY="193.0" promptText="Number" />
+      <TextField fx:id="dremail" layoutX="700.0" layoutY="256.0" promptText="example@yahoo.com" />
+      <TextField fx:id="shift" layoutX="700.0" layoutY="395.0" promptText="thurday at 3:300 to 5:00" />
+      <PasswordField fx:id="drpassword" layoutX="700.0" layoutY="321.0" text="dkckdscds" />
+      <Button fx:id="add_btn" layoutX="797.0" layoutY="552.0" mnemonicParsing="false" onAction="#add_click" prefHeight="27.0" prefWidth="90.0" text="Add" />
+      <Text layoutX="176.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor's Specilization  ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="drspec" layoutX="700.0" layoutY="468.0" prefHeight="31.0" prefWidth="187.0" promptText="Specialization " />
+      <Button fx:id="back_btn" layoutX="986.0" layoutY="552.0" mnemonicParsing="false" onAction="#back1_click" prefHeight="31.0" prefWidth="90.0" text="back" />
+   </children>
+</AnchorPane>

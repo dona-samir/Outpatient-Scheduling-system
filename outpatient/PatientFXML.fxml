@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="626.0" maxWidth="1100.0" minHeight="618.0" minWidth="1100.0" prefHeight="618.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.PatientFXMLController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="combobox_Specialization" layoutX="78.0" layoutY="128.0" onAction="#Select" prefHeight="40.0" prefWidth="245.0" promptText="Show Specialization" />
+      <Button fx:id="submit_btn" layoutX="376.0" layoutY="128.0" mnemonicParsing="false" onAction="#submit_click" prefHeight="40.0" prefWidth="123.0" text="Submit" />
+      <Label fx:id="hidden" layoutX="78.0" layoutY="33.0" text="Label" visible="false" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#f1f3f4" height="460.0" layoutX="517.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="530.0" />
+      <Label fx:id="labell" alignment="TOP_LEFT" layoutX="521.0" layoutY="75.0" prefHeight="440.0" prefWidth="518.0" text=" ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="doc_id" layoutX="78.0" layoutY="227.0" prefHeight="40.0" prefWidth="245.0" promptText="Enter Doctor ID" />
+      <Button fx:id="show_btn" layoutX="376.0" layoutY="329.0" mnemonicParsing="false" onAction="#show_click" prefHeight="40.0" prefWidth="123.0" text="Show Schedule" />
+      <DatePicker fx:id="datee" editable="false" layoutX="78.0" layoutY="329.0" prefHeight="40.0" prefWidth="245.0" promptText="Select Date" />
+      <Label layoutX="71.0" layoutY="75.0" text="Please Select Spezialization and Submit:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timeslot_txt" layoutX="78.0" layoutY="428.0" prefHeight="40.0" prefWidth="245.0" promptText="Enter Time Slot as 6:35" />
+      <Button fx:id="book_btn" layoutX="376.0" layoutY="428.0" mnemonicParsing="false" onAction="#book_click" prefHeight="40.0" prefWidth="123.0" text="Book" />
+      <Button fx:id="patient_apointments" layoutX="201.0" layoutY="528.0" mnemonicParsing="false" onAction="#patient_apointment" prefHeight="40.0" prefWidth="156.0" text="My Appointments" />
+   </children>
+</AnchorPane>

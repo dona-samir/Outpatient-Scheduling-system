@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="626.0" maxWidth="1100.0" minHeight="618.0" minWidth="1100.0" prefHeight="618.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.AdminFXMLController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="combobox_Specialization" layoutX="78.0" layoutY="128.0" onAction="#Select_combo" prefHeight="40.0" prefWidth="245.0" promptText="Show Specialization" />
+      <Button fx:id="submit1_btn" layoutX="393.0" layoutY="128.0" mnemonicParsing="false" onAction="#submit1_click" prefHeight="40.0" prefWidth="87.0" text="Submit" />
+      <Label fx:id="hidden" layoutX="78.0" layoutY="33.0" text="Label" visible="false" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#f1f3f4" height="460.0" layoutX="517.0" layoutY="76.0" stroke="BLACK" strokeType="INSIDE" width="530.0" />
+      <Label fx:id="label1" alignment="TOP_LEFT" layoutX="523.0" layoutY="86.0" prefHeight="440.0" prefWidth="518.0" text=" ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="doc_id" layoutX="78.0" layoutY="219.0" prefHeight="40.0" prefWidth="245.0" promptText="Enter Doctor ID to remove" />
+      <Label layoutX="82.0" layoutY="474.0" prefHeight="31.0" prefWidth="245.0" text="View admins">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="remove_btn" layoutX="393.0" layoutY="219.0" mnemonicParsing="false" onAction="#Select" prefHeight="40.0" prefWidth="87.0" text="Remove" />
+      <Button fx:id="view_btn" layoutX="393.0" layoutY="474.0" mnemonicParsing="false" onAction="#view_click" prefHeight="40.0" prefWidth="87.0" text="View" />
+      <Button fx:id="remove_btn2" layoutX="393.0" layoutY="394.0" mnemonicParsing="false" onAction="#remove2_click" prefHeight="40.0" prefWidth="87.0" text="Remove" />
+      <Label layoutX="81.0" layoutY="62.0" text="Please Select Specialization and Submit:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="admin_name" layoutX="78.0" layoutY="394.0" prefHeight="40.0" prefWidth="245.0" promptText="Enter Admin name to remove" />
+      <TextField fx:id="sep_name" layoutX="78.0" layoutY="309.0" prefHeight="40.0" prefWidth="245.0" promptText="add new specilization " />
+      <Button fx:id="add_btn" layoutX="393.0" layoutY="309.0" mnemonicParsing="false" onAction="#addsp_click" prefHeight="40.0" prefWidth="87.0" text="Add" />
+      <Button fx:id="logout_btn" layoutX="954.0" layoutY="549.0" mnemonicParsing="false" onAction="#logout_click" prefHeight="40.0" prefWidth="87.0" text="log out" />
+      <Button fx:id="adddoctor_btn" layoutX="78.0" layoutY="549.0" mnemonicParsing="false" onAction="#adddr_click" prefHeight="40.0" prefWidth="109.0" text="Add Doctor" />
+      <Button fx:id="addadmin_btn" layoutX="389.0" layoutY="549.0" mnemonicParsing="false" onAction="#addadmin_click" prefHeight="40.0" prefWidth="95.0" text="Add Admin" />
+   </children>
+</AnchorPane>
